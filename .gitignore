@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Something For You ♡</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffe4ec, #fff4f5, #fce0e8);
+    font-family: Georgia, serif;
+    overflow-x: hidden;
+    color: #50333d;
+    padding: 30px 15px;
+}
+
+.container {
+    text-align: center;
+    animation: appear 2s ease;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 25px;
+    color: #946b78;
+}
+
+.bouquet {
+    width: min(90vw, 430px);
+    height: auto;
+    filter: drop-shadow(0 15px 15px #8a526044);
+    animation: float 4s ease-in-out infinite;
+}
+
+.message {
+    margin-top: 20px;
+    line-height: 1.8;
+    font-size: 17px;
+    max-width: 340px;
+    margin-inline: auto;
+}
+
+.signature {
+    margin-top: 20px;
+    font-style: italic;
+    color: #a66d80;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    color: #e99aad;
+    animation: rise linear infinite;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rise {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>A LITTLE SOMETHING FOR YOU</h1>
+    <p class="subtitle">Just because ♡</p>
+
+    <svg class="bouquet" viewBox="0 0 400 460"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <linearGradient id="black" x2="1" y2="1">
+                <stop stop-color="#303030"/>
+                <stop offset="1" stop-color="#080808"/>
+            </linearGradient>
+
+            <linearGradient id="gold" x2="1" y2="1">
+                <stop stop-color="#f6d88a"/>
+                <stop offset="1" stop-color="#a9792d"/>
+            </linearGradient>
+        </defs>
+
+        <!-- Stems -->
+        <g stroke="#52734c" stroke-width="5" fill="none"
+           stroke-linecap="round">
+            <path d="M200 225 L200 390"/>
+            <path d="M175 205 L190 390"/>
+            <path d="M225 205 L210 390"/>
+            <path d="M145 230 L185 390"/>
+            <path d="M255 225 L215 390"/>
+            <path d="M110 255 L175 390"/>
+            <path d="M290 255 L225 390"/>
+        </g>
+
+        <!-- Green leaves -->
+        <g fill="#668b59">
+            <ellipse cx="145" cy="300" rx="28" ry="10"
+                     transform="rotate(25 145 300)"/>
+            <ellipse cx="250" cy="290" rx="30" ry="11"
+                     transform="rotate(-25 250 290)"/>
+            <ellipse cx="170" cy="340" rx="25" ry="9"
+                     transform="rotate(-25 170 340)"/>
+            <ellipse cx="230" cy="340" rx="25" ry="9"
+                     transform="rotate(25 230 340)"/>
+        </g>
+
+        <!-- Yellow flowers -->
+        <g fill="#e8bd55">
+            <g transform="translate(115 190)">
+                <circle cy="-12" r="9"/>
+                <circle cx="12" r="9"/>
+                <circle cy="12" r="9"/>
+                <circle cx="-12" r="9"/>
+                <circle r="6" fill="#8e6030"/>
+            </g>
+            <g transform="translate(285 180)">
+                <circle cy="-12" r="9"/>
+                <circle cx="12" r="9"/>
+                <circle cy="12" r="9"/>
+                <circle cx="-12" r="9"/>
+                <circle r="6" fill="#8e6030"/>
+            </g>
+        </g>
+
+        <!-- Pink flowers -->
+        <g fill="#e9a2b3">
+            <g transform="translate(155 155)">
+                <circle cy="-10" r="8"/>
+                <circle cx="10" r="8"/>
+                <circle cy="10" r="8"/>
+                <circle cx="-10" r="8"/>
+                <circle r="5" fill="#e5bd70"/>
+            </g>
+            <g transform="translate(250 145)">
+                <circle cy="-10" r="8"/>
+                <circle cx="10" r="8"/>
+                <circle cy="10" r="8"/>
+                <circle cx="-10" r="8"/>
+                <circle r="5" fill="#e5bd70"/>
+            </g>
+        </g>
+
+        <!-- Small white flowers -->
+        <g fill="#fffaf0">
+            <g transform="translate(95 235)">
+                <circle cy="-7" r="6"/>
+                <circle cx="7" r="6"/>
+                <circle cy="7" r="6"/>
+                <circle cx="-7" r="6"/>
+                <circle r="3" fill="#e6bd61"/>
+            </g>
+            <g transform="translate(305 225)">
+                <circle cy="-7" r="6"/>
+                <circle cx="7" r="6"/>
+                <circle cy="7" r="6"/>
+                <circle cx="-7" r="6"/>
+                <circle r="3" fill="#e6bd61"/>
+            </g>
+        </g>
+
+        <!-- White rose centerpiece -->
+        <g transform="translate(200 125)">
+            <circle r="37" fill="#fffaf4"/>
+            <path d="M0 -32 C35 -35 35 5 5 10
+                     C-20 15 -30 -15 -10 -25
+                     C10 -35 25 -10 10 5
+                     C-5 20 -20 0 -8 -12
+                     C0 -22 12 -12 4 -3"
+                  fill="#f4e8df" stroke="#e6d7ce" stroke-width="2"/>
+            <path d="M0 -18 C18 -18 15 5 0 7
+                     C-12 8 -14 -7 -5 -10"
+                  fill="none" stroke="#d7c5bc" stroke-width="2"/>
+        </g>
+
+        <!-- Bouquet wrapper -->
+        <path d="M75 235 L200 340 L325 235 L275 410 L125 410 Z"
+              fill="url(#black)" stroke="url(#gold)" stroke-width="4"/>
+
+        <!-- Gold inner wrapper -->
+        <path d="M75 235 L200 340 L155 410 Z"
+              fill="#b58a43" opacity="0.65"/>
+        <path d="M325 235 L200 340 L245 410 Z"
+              fill="#b58a43" opacity="0.65"/>
+
+        <!-- Wrapper gold edges -->
+        <path d="M75 235 L200 340 L325 235"
+              fill="none" stroke="url(#gold)" stroke-width="5"/>
+
+        <!-- Ribbon -->
+        <path d="M170 365 Q200 390 230 365
+                 L250 415 L200 400 L150 415 Z"
+              fill="#d6b36b" stroke="#9c7136" stroke-width="2"/>
+
+        <path d="M200 365
+                 C165 335 145 375 195 385
+                 C235 375 230 340 200 365"
+              fill="#d6b36b" stroke="#9c7136" stroke-width="2"/>
+
+        <circle cx="200" cy="375" r="8"
+                fill="#f5dca0" stroke="#9c7136" stroke-width="2"/>
+
+        <!-- Gold details -->
+        <path d="M105 275 L170 350 M295 275 L230 350"
+              stroke="#d6b36b" stroke-width="2" fill="none"/>
+
+    </svg>
+
+    <div class="message">
+        <p>
+            Some flowers are beautiful, but some people
+            make the world feel a little more beautiful
+            just by being in it.
+        </p>
+
+        <p style="margin-top: 12px;">
+            So here's a little something for you.
+            I hope it makes you smile. ♡
+        </p>
+    </div>
+
+    <p class="signature">With love ♡</p>
+
+</div>
+
+<script>
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "♥";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 600);
+</script>
+
+</body>
+</html>
